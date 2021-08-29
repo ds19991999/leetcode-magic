@@ -16,13 +16,15 @@ import java.util.ArrayList;
 
 public class LeetCode2Test {
 
+    private final LeetCode2 solution = new LeetCode2();
+
     @Test
     public void test1() {
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         ArrayList<Integer> result1 = getListFromListNode(new ListNode(7, new ListNode(0, new ListNode(8))));
 
-        ArrayList<Integer> result2 = getListFromListNode(new LeetCode2().addTwoNumbers(l1, l2));
+        ArrayList<Integer> result2 = getListFromListNode(solution.addTwoNumbers(l1, l2));
         Assert.assertArrayEquals(new ArrayList[]{result1}, new ArrayList[]{result2});
     }
 
@@ -33,7 +35,7 @@ public class LeetCode2Test {
         ListNode result = new ListNode(0);
 
         ArrayList<Integer> result1 = getListFromListNode(result);
-        ArrayList<Integer> result2 = getListFromListNode(new LeetCode2().addTwoNumbers(l1, l2));
+        ArrayList<Integer> result2 = getListFromListNode(solution.addTwoNumbers(l1, l2));
         Assert.assertArrayEquals(new ArrayList[]{result1}, new ArrayList[]{result2});
     }
 
@@ -48,7 +50,7 @@ public class LeetCode2Test {
                         new ListNode(0, new ListNode(1))))))));
 
         ArrayList<Integer> result1 = getListFromListNode(result);
-        ArrayList<Integer> result2 = getListFromListNode(new LeetCode2().addTwoNumbers(l1, l2));
+        ArrayList<Integer> result2 = getListFromListNode(solution.addTwoNumbers(l1, l2));
         Assert.assertArrayEquals(new ArrayList[]{result1}, new ArrayList[]{result2});
     }
 

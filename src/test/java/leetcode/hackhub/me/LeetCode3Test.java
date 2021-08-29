@@ -13,25 +13,25 @@ import org.junit.Test;
 
 public class LeetCode3Test {
 
-    private static final LeetCode3 leetCode3 = new LeetCode3();
+    private final LeetCode3 solution = new LeetCode3();
 
     @Test
     public void test1() {
-        Assert.assertEquals(3, leetCode3.lengthOfLongestSubstring("abcabcbb"));
+        Assert.assertEquals(3, solution.lengthOfLongestSubstring("abcabcbb"));
     }
 
     @Test
     public void test2() {
-        Assert.assertEquals(1, leetCode3.lengthOfLongestSubstring("bbbbb"));
+        Assert.assertEquals(1, solution.lengthOfLongestSubstring("bbbbb"));
     }
 
     @Test
     public void test3() {
-        Assert.assertEquals(3, leetCode3.lengthOfLongestSubstring("pwwkew"));
+        Assert.assertEquals(3, solution.lengthOfLongestSubstring("pwwkew"));
     }
 
     @Test
     public void test4() {
-        Assert.assertEquals(0, leetCode3.lengthOfLongestSubstring(""));
+        Assert.assertEquals(0, solution.lengthOfLongestSubstring(""));
     }
 }

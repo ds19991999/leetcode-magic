@@ -17,6 +17,7 @@ class LeetCodeData(object):
 def get_leetcode_data(root, pattern):
     for file_name in os.listdir(root):
         file_path = os.path.join(root, file_name)
+        if ("weekly" in file_name): continue
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
             url = re.findall(r''+pattern, content)
