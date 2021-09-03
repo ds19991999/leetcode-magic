@@ -53,6 +53,6 @@ def write_read_me(file_path, root, pattern):
 
 if __name__ == "__main__":
     file_path = "README.md"
-    root="src/main/java/leetcode/hackhub/me/"
+    root="src/main/java/me/hackhub/leetcode/solution"
     pattern='https://leetcode-cn.com/problems/[^\s<>"]+'
     write_read_me(file_path, root, pattern)
